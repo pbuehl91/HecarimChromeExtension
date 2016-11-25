@@ -1,0 +1,46 @@
+{
+  "name": "Hecarim Chrome Extension",
+  "version": "0.1",
+  "description": "A Hecarim browsing experience",
+  "default_locale": "en",
+
+
+  "app": {
+    "launch": {
+      "local_path": "src/main.html"
+    }
+  },
+
+  "permissions": [
+    "http://*.google.com/",
+    "bookmarks",
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "cookies",
+    "geolocation",
+    "history",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "tts",
+    "ttsEngine",
+    "unlimitedStorage"
+  ],
+
+  "content_security_policy": "script-src https://api.twitter.com; object-src 'self'",
+
+  "content_scripts": [
+    {
+      /*"matches": ["http:/*//**/*//*"],
+      "css": ["src/contentStyle.css"],
+      "js": ["jquery/jquery.min.js", "src/contentScript.js"]*/
+    }
+  ],
+
+  "manifest_version": 2
+
+
+}
