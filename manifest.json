@@ -2,7 +2,6 @@
   "name": "Hecarim Chrome Extension",
   "version": "0.1",
   "description": "A Hecarim browsing experience",
-  "default_locale": "en",
 
 
   "app": {
@@ -34,9 +33,9 @@
 
   "content_scripts": [
     {
-      /*"matches": ["http:/*//**/*//*"],
-      "css": ["src/contentStyle.css"],
-      "js": ["jquery/jquery.min.js", "src/contentScript.js"]*/
+      "matches": ["http://*/*"],
+      //"css": ["src/contentStyle.css"],
+      "js": ["jquery/jquery.min.js", "hecarim.js"]
     }
   ],
 
