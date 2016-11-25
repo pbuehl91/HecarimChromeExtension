@@ -3,13 +3,6 @@
   "version": "0.1",
   "description": "A Hecarim browsing experience",
 
-
-  "app": {
-    "launch": {
-      "local_path": "src/main.html"
-    }
-  },
-
   "permissions": [
     "http://*.google.com/",
     "bookmarks",
@@ -34,7 +27,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*"],
-      //"css": ["src/contentStyle.css"],
+      "css": ["hecarim.css"],
       "js": ["jquery/jquery.min.js", "hecarim.js"]
     }
   ],
